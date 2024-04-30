@@ -18,12 +18,11 @@
   "scripts": {
     "build": "webpack --config webpack.config.js --mode=production",
     "clean": "node scripts/clean",
-    "dev": "webpack --config webpack.config.js --mode=development --watch",
     "dist": "node scripts/dist",
     "download": "node scripts/download",
     "server": "npx http-server ./build --cors",
     "test": "ts-node ./node_modules/jasmine/bin/jasmine --config=jasmine.json",
-    "start": "webpack serve --config webpack.config.js --mode development --open"
+    "dev": "webpack serve --config webpack.config.js --mode development --open"
   },
   "dependencies": {
     "@material-ui/core": "^4.12.3",
